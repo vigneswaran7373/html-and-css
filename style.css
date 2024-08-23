@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 35px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.logo{
+    font-style: 25px;
+    color: white;
+    font-weight: 600;
+}
+.logo:hover{
+text-shadow: 0 0 25px orangered,
+             0 0 25px orangered;
+}
+span{
+    color:orangered;
+}
+.nave a{
+    font-style: 10px;
+    color:white;
+    font-weight: 500;
+    margin:0 20px;
+    border-bottom: 3px solid transparent;
+}
+.nave a:hover,
+.nave a:active{
+    color:orangered;
+    border-bottom: 3px solid;
+}
+.CONTECTUS{
+    padding:10px 20px;
+    background-color: white;
+    color: black;
+    border:2px solid transparent;
+    border-radius: 8px;
+    font-size:16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.CONTECTUS:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.home{
+    width: 100px;
+    min-height:100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    max-width:800px;
+}
+
+.home h1{
+    font-size: 72px;
+}
+.img img{
+    border-radius: 50%;
+    width: 400px;
+    transform: translateX(400px);
+margin-top: 100px;
+  
+
+}
