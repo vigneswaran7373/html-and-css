@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Sunset.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+.cloud{
+   height: 150px;
+width: 500%;
+position: absolute;
+right: 0;
+top: 0;
+animation:water 40s linear infinite;
+background-repeat: repeat-x;
+overflow-x: hidden;
+    transform: translateY(1000px);
+    opacity: 20000000001px;
+animation:  cloud 10s linear infinite;
+}
+@keyframes cloud{
+    0%{
+transform: translateX(0);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+.sea{
+    height: 220px;
+    width: 100%;
+    background-image: url(road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.water{
+height: 350px;
+width: 500%;
+position: absolute;
+right: 0;
+top: 500px;
+animation:water 40s linear infinite;
+background-repeat: repeat-x;
+overflow-x: hidden;
+}
+@keyframes water{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+.boat{
+    width: 350px;
+    position: absolute;
+    bottom:150px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.boat img{
+ width: 100%;   
+ animation:boat 2s linear infinite;
+
+}
+@keyframes boat{
+    0%{
+        transform: rotate(0deg) translateY(0);
+    }
+    25%{
+        transform: rotate(-1deg)translateY(-3px);
+    }
+    50%{
+        transform: (0deg) translateY(-5px);
+    }
+    75%{
+        transform: rotate(1deg) translateY(-3px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0) ;
+    }
+
+}
