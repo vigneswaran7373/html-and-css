@@ -1,0 +1,66 @@
+.t1{
+    color: aquamarine;
+    background-color: black;
+    font:bold 25px arial
+}
+#t2{
+    color: blue;
+    background-image:linear-gradient(red,blue),url(ss4.png);
+    width: 250px;
+    height: 250px;
+    background-blend-mode:exclusion;
+
+
+}
+body{
+    background-color: cadetblue;
+    background-origin: content-box;
+    background:linear-gradient(to right,red,yellow);
+    background:linear-gradient(45deg,rgb(0, 255, 55),blue);
+    background:radial-gradient(closest-corner at 80% 20%, red ,yellow);
+    background-image: url(ss1.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size:auto;
+}
+#box{
+    background-color: black;
+    width: 200px;
+    margin: 20px;
+    margin-right: 20px;
+    margin:30px 50px 10px;
+    padding: 10px;
+    padding-right: 20px;
+    padding: 10px 20px 30px 40px;
+    border-right: 26px;
+    border:10px 30px 23px;
+}
+#text{
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+background-image:url(ss1.png);
+background-size: cover;
+}
+img{
+    opacity: 0.5;
+    width: 200px;
+    height: 200px; ;
+}
+ul li{
+    list-style-type:circle;
+    list-style-type: none;
+    list-style-position:outside;
+    color: brown;
+}
+ol li::before{
+     content: none;
+    display: inline-block;
+    margin-right: 10px;
+    list-style-type: square;
+    height:10px;
+    width:10px;
+    background-image:url(sunset.jpj);
+    background-size: cover;
+}
