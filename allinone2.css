@@ -1,0 +1,99 @@
+table{
+    border-collapse:collapse;
+}
+table tr:nth-of-type(even){
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+}
+table tr:nth-of-type(odd){
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+table{
+    margin-top: 100px;
+    margin-left:100px;
+    width: 600px;
+    display: table;
+}
+a[title="link1"]{
+    color: chartreuse;
+}
+a[href ="#"]
+{
+    color: rgb(35, 7, 195);
+}
+a:hover{
+    color:rgb(2, 60, 2);
+}
+a:active{
+    color:rgb(215, 139, 17);
+}
+a:visited{
+    color:rgb(203, 34, 169);
+}
+ul li:nth-last-child(1){
+    color:darkred
+}
+ul li:nth-last-of-type(1){
+    color:rgb(10, 3, 103)
+}
+.box{
+    background-color: blueviolet;
+    width:250px;
+    height: 250px;
+    border-radius: 150px;  /*shape modifier*/
+    box-shadow: 5px 5px 1px 0px;
+    position: relative;
+    z-index:4;
+}
+.box1{
+    background-color: rgb(210, 216, 38);
+    width:200px;
+    height: 200px;
+    position: relative;   /*r l t b direction*/
+    right: 150px;
+    left :30px;
+    z-index:2;
+}
+.box2{
+    background-color: rgb(31, 125, 128);
+    width:200px;
+    height: 200px;
+    position: absolute; 
+    left:60px;  /*r l t b and move main box out side direction*/
+    bottom:200px;
+    z-index:3;
+}
+  
+
+.box3{
+    background-color: rgb(232, 33, 162);
+    width:200px;
+    height: 200px;
+    position: fixed; 
+    left:500px;  /*r l t b */
+    bottom: 200px;
+    z-index:1;
+    outline-style: double;
+    outline-width: 20px;
+    box-sizing: border-box;
+}
+:root{
+    --vwcolor:red; /*create own variable*/
+}
+h1{
+    color:var(--vwcolor);/*create own variable call*/
+}
+p:not(.para){
+    color:red;
+}
+p:target{
+    background-color:blue;
+    color:rgb(148, 192, 4);
+}
+input[type="checkbox"]:checked{
+    outline:none;
+    box-shadow:0 0 0 3px red;
+}

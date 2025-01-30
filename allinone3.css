@@ -1,0 +1,121 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: darkviolet;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:step-end;
+    transition-delay:0.5ms;
+    transform: translateY(200px);
+    transform: rotate(30deg);
+    transform: translate3d(10px,10px,10px,30deg);
+    transform:scale(1);
+    transform: skew(20deg);
+    transition:transform 3s linear;
+}
+.box:hover{
+    width: 300px;
+    height:300px;
+    background-color: chartreuse;
+    transform: translateX(200px);
+}
+.ani{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: anibox1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes anibox1{
+    from{
+        background-color: darkgoldenrod;
+    }
+    to{
+        background-color: blue;
+    }
+}
+.box1{
+     width: 200px;
+    height: 200px;
+    background-color: rgb(180, 4, 4);
+    animation-name: anibox2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction:alternate-reverse;
+    animation-timing-function: step-start;
+    animation-fill-mode: backwards;
+    animation :box 3s linear 1s infinite normal forwards;
+}
+@keyframes anibox2{
+ 0%{
+    background-color: rgb(42, 136, 165);left:20px;top:20px;
+ }
+ 25%{
+    background-color: rgb(9, 159, 9);left:40px;top:40px;
+ }
+ 50%{
+    background-color: rgb(7, 78, 26);right:60px;bottom:60;
+ }
+ 100%{
+    background-color: rgb(196, 17, 131);right:80px;bottom:80px;
+ }
+}
+.fbox{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: center;
+    align-content: flex-start;
+    border:5px solid black;
+    padding:10px;
+    margin-top:50px;
+
+}
+.fbox1{
+    padding:30px;
+    border:5px solid red;
+    margin:10px;
+    font-weight: bold;
+    background-color: darkgreen;
+    order:3;
+    
+     flex-shrink:10;
+}
+
+.fbox2{
+    padding:30px;
+    border:5px solid red;
+    margin:10px;
+    font-weight: bold;
+    background-color: rgb(22, 6, 86);
+    order:2;
+    flex-grow: 1;
+}
+   
+.fbox3{
+    padding:30px;
+    border:5px solid red;
+    margin:10px;
+    font-weight: bold;
+    background-color: rgb(160, 192, 3);
+    order:1;
+}
+.float{
+     width: 200px;
+    height: 200px;
+    background-color: black;
+    float: right;
+}
+img{
+      width: 150px;
+      height: 150px;
+      object-fit:contain;
+}
+ 
